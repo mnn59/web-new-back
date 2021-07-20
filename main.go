@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-
 	database.Connect()
 
 	app := fiber.New()
@@ -20,7 +19,6 @@ func main() {
 	routes.Setup(app)
 
 	app.Listen(":8000")
-
 
 	//_, err := gorm.Open(mysql.Open("root:@/go_test"), &gorm.Config{})
 	//
